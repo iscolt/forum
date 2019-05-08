@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="cn" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>论坛 | 首页</title>
+</head>
+<body>
+<!-- 引入top -->
+<div th:replace="commons/top.html"/>
+<br><br><br><br><br>
+
+<!-- 首页内容 -->
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="row">
+            <div class="jumbotron">
+                <h1>你好, 大家闺秀论坛!</h1><br>
+                <p>&nbsp;&nbsp;欢迎来到大家闺秀论坛! 巴拉This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p><br>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-primary btn-lg" href="#" role="button">点击参看源码</a></p>
+            </div>
+        </div><br>
+        <div class="row">
+            <!-- 论坛列表 -->
+            <div class="col-md-3">
+                <a href="#" class="thumbnail" style='text-decoration:none;'>
+                    <img src="assets/img/fav.jpg" alt="..." width="200" height="200">
+                    <h2>Java 论坛</h2>
+                    <p>Java 学习交流, 爱 Java 你就来!</p>
+                    <!-- Single button -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-info">
+                            点击进入
+                        </button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

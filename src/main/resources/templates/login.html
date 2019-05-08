@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="cn" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>论坛 | 登录</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/login.css"/>
+</head>
+<body class="text-center">
+<div class="login-box">
+    <form class="form-signin" action="/login" method="post">
+        <img class="mb-4" src="/assets/img/fav.jpg" alt="" width="72" height="72">
+        <!--判断 msg有的情况 才显示-->
+        <p style="color: red" th:text="${message}" th:if="${not #strings.isEmpty(message)}"></p>
+        <label class="sr-only" >Username</label>
+        <input type="text" id="account" name="account" class="form-control" placeholder="Username" required="" autofocus=""><br>
+        <label class="sr-only" >Password</label>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Password" required=""><br>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button>
+    </form>
+</div>
+</body>
+</html>
