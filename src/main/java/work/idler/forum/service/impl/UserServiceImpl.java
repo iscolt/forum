@@ -8,6 +8,8 @@ import work.idler.forum.domain.User;
 import work.idler.forum.service.UserService;
 
 /**
+ * 用户服务实现
+ *
  * @Auther:https://blog.idler.work
  * @Date:2019/5/8
  * @Description:work.idler.forum.service.impl

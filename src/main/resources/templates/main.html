@@ -7,8 +7,6 @@
 <body>
 <!-- 引入top -->
 <div th:replace="commons/top.html"/>
-<br><br><br><br><br>
-
 <!-- 首页内容 -->
 <div class="row">
     <div class="col-md-1"></div>
@@ -17,16 +15,16 @@
             <div class="jumbotron">
                 <h1>你好, 大家闺秀论坛!</h1><br>
                 <p>&nbsp;&nbsp;欢迎来到大家闺秀论坛! 巴拉This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p><br>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-primary btn-lg" href="#" role="button">点击参看源码</a></p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-primary btn-lg" href="https://github.com/iscolt/forum" role="button">点击参看源码</a></p>
             </div>
         </div><br>
         <div class="row">
             <!-- 论坛列表 -->
-            <div class="col-md-3">
-                <a href="#" class="thumbnail" style='text-decoration:none;'>
-                    <img src="assets/img/fav.jpg" alt="..." width="200" height="200">
-                    <h2>Java 论坛</h2>
-                    <p>Java 学习交流, 爱 Java 你就来!</p>
+            <div class="col-md-3" th:each="forum:${forums}">
+                <a th:href="@{'/posts/'+${forum.getForumId()}}" class="thumbnail" style='text-decoration:none;'>
+                    <img th:src="${forum.getImage()}" alt="..." width="200" height="200">
+                    <h2 th:text="${forum.getName()}"></h2>
+                    <p th:text="${forum.getDesc()}"></p>
                     <!-- Single button -->
                     <div class="btn-group">
                         <button type="button" class="btn btn-info">

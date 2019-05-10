@@ -48,7 +48,7 @@ public class LoginController {
 
         // 登录失败
         if (user == null) {
-            model.addAttribute("message", "用户名或密码错误, 请重新输入! ");
+            model.addAttribute(ConstantUtils.SESSION_LOGIN_ERROR, "用户名或密码错误, 请重新输入! ");
             return login();
         }
 

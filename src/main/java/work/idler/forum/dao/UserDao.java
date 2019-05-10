@@ -7,6 +7,8 @@ import org.springframework.stereotype.Repository;
 import work.idler.forum.domain.User;
 
 /**
+ * 用户数据访问层
+ *
  * @Auther:https://blog.idler.work
  * @Date:2019/5/8
  * @Description:work.idler.forum.dao

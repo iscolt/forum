@@ -3,6 +3,8 @@ package work.idler.forum.service;
 import work.idler.forum.domain.User;
 
 /**
+ * 用户服务
+ *
  * @Auther:https://blog.idler.work
  * @Date:2019/5/8
  * @Description:work.idler.forum.service

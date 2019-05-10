@@ -36,7 +36,15 @@
             <ul class="nav navbar-nav">
                 <li><a href="#">关于</a></li>
             </ul>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a>个人积分: [[${session.user.points}]]</a>
+                </li>
+            </ul>
             <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a>个人积分: [[${session.user.points}]]</a>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" th:text="${session.user}==null?'':${session.user.nickname}" style="color: #007bff"></a>
                     <ul class="dropdown-menu">
@@ -52,5 +60,15 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
+<br><br><br>
+<ol class="breadcrumb" style="background-color: rgba(255,255,255,0)">
+    <li class="active">
+        <a href="/main">首页</a>
+    </li>
+    <li>
+        <a href="#" th:text="${session.activeUri=='posts'?forumName==null?'':forumName:session.activeUri=='main'?'':'社区'}"></a>
+    </li>
+</ol>
+
 </body>
 </html>
