@@ -6,8 +6,8 @@ spring:
       enabled: always
   datasource:
     username: root
-    password: 5211
-    url: jdbc:mysql://39.107.101.237:3306/forum?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    password: xxx
+    url: jdbc:mysql://xxx:3306/forum?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.jdbc.Driver
 # mybatis 扫包
 mybatis:
